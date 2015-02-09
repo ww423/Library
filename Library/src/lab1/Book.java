@@ -1,46 +1,57 @@
 package lab1;
 
+/**
+ * A representation of a book.
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ */
 public class Book {
 
+    /**
+     * This book's title.
+     */
     private String title;
     
+    /**
+     * True if this book is borrowed and false otherwise.
+     */
     private boolean borrowed;
 
     /**
-     * Creates a new Book
+     * Creates a new Book.
+     * @param bookTitle The title of the book that will be created.
      */
     public Book(String bookTitle) {
-        // Implement this method
+        // TODO: Implement this method
     }
    
     /** 
-     * Marks the book as rented
+     * Marks this book as rented.
      */
-    public void borrowed() {
-        // Implement this method
+    public void rented() {
+        // TODO: Implement this method
     }
    
     /**
-     * Marks the book as not rented
+     * Marks this book as not rented.
      */
     public void returned() {
-        // Implement this method
+        // TODO: Implement this method
     }
    
     /**
-     * Returns true if the book is rented, false otherwise
+     * Returns true if this book is rented, false otherwise.
+     * @return true if this book is rented and false otherwise.
      */
     public boolean isBorrowed() {
-        // Implement this method
-        return false;
+        // TODO: Implement this method
     }
    
     /** 
-     * Returns the title of the book
+     * Returns this book's title as a String.
+     * @return This book's title as a String.
      */
     public String getTitle() {
-        // Implement this method
-        return null;
+        // TODO: Implement this method
     }
 
     public static void main(String[] arguments) {

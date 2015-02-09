@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab1;
 
 /**
- *
- * @author rkhatchadourian
+ * A representation of a library of books.
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
  */
 public class Library {
     // Add the missing implementation to this class
