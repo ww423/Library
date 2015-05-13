@@ -10,6 +10,10 @@ Please follow these steps:
 1. [**Push**][ref-push]/sync the changes up to GitHub.
 1. [Create a **pull request**][pull-request] on the original repository to turn in the assignment.
 2. Submit your GitHub **username** on [Blackboard][blackboard].
+ 
+## Hint
+Use `Book[]`.
+
 
 <!-- Links -->
 [create-repo]: https://help.github.com/articles/create-a-repo
