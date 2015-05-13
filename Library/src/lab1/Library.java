@@ -5,7 +5,7 @@ package lab1;
  * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
  */
 public class Library {
-    // Add the missing implementation to this class
+    // TODO: Add the missing implementation to this class
 
     public static void main(String[] args) {
         // Create two libraries
