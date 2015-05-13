@@ -1,5 +1,5 @@
-# library
-Lab 1: Libraries
+# Library
+Lab 7: Library
 
 Please follow these steps:
 
@@ -24,5 +24,5 @@ Please follow these steps:
 [ref-push]: http://gitref.org/remotes/#push
 [pull-request]: https://help.github.com/articles/creating-a-pull-request
 [raw]: https://raw.githubusercontent.com/education/guide/master/docs/forks.md\
-[blackboard]: https://bbhosted.cuny.edu/webapps/assignment/uploadAssignment?content_id=_19446116_1&course_id=_1112205_1&assign_group_id=&mode=cpview
+[blackboard]: https://bbhosted.cuny.edu/webapps/assignment/uploadAssignment?content_id=_20246794_1&course_id=_1101235_1&assign_group_id=&mode=cpview
 [instructions]: https://github.com/cst1201-d644/Library/blob/master/Instructions.pdf
