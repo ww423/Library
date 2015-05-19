@@ -21,32 +21,29 @@ public class Book {
      * @param bookTitle The title of the book that will be created.
      */
     public Book(String bookTitle) {
-        bookTitle = "The DaVinci Code";
+       title = bookTitle;
     }
    
     /** 
      * Marks this book as rented.
      */
     public void rented() {
-        int rented = 1;
+        borrowed = true;
     }
    
     /**
      * Marks this book as not rented.
      */
     public void returned() {
-        int returned = 2;
+        borrowed = false;
     }
    
     /**
      * Returns true if this book is rented, false otherwise.
      * @return true if this book is rented and false otherwise.
      */
-    public boolean isBorrowed(int rented, int returned) {
-        if (returned < 2)
-            return true;
-        else 
-            return false;
+    public boolean isBorrowed() {
+        return borrowed;
     }
    
     /** 
@@ -54,7 +51,7 @@ public class Book {
      * @return This book's title as a String.
      */
     public String getTitle() {
-        
+        return title;
     }
 
     public static void main(String[] arguments) {
