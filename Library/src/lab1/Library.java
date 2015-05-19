@@ -2,16 +2,19 @@ package lab1;
 
 /**
  * A representation of a library of books.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ *
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi
+ * Khatchadourian</a>.
  */
 public class Library {
+
     String address;
     Book[] collection = {};
-    
+
     public Library(String location) {
         address = location;
     }
-    
+
     public void addBook(Book book) {
         Book[] add = new Book[collection.length + 1];
         for (int i = 0; i < collection.length; i++) {
@@ -20,16 +23,15 @@ public class Library {
         add[collection.length] = book;
         collection = add;
     }
-    
-    public void borrowBook (String title) {
+
+    public void borrowBook(String title) {
         boolean inCollection = false;
         for (int i = 0; i < collection.length; i++) {
             if (collection[i].getTitle().equals(title)) {
                 if (collection[i].isBorrowed()) {
                     System.out.println("Sorry, this book is already borrowed.");
                     inCollection = true;
-                }
-                else {
+                } else {
                     collection[i].rented();
                     System.out.println("You successfully borrowed " + title);
                     inCollection = true;
@@ -40,8 +42,8 @@ public class Library {
             System.out.println("Sorry, this book is not in our catalog.");
         }
     }
-    
-    public void returnBook (String title) {
+
+    public void returnBook(String title) {
         boolean inCollection = false;
         for (int i = 0; i < collection.length; i++) {
             if (collection[i].getTitle().equals(title)) {
@@ -56,11 +58,11 @@ public class Library {
             System.out.println("Sorry, this book is not in our catalog.");
         }
     }
-    
+
     public static void printOpeningHours() {
         System.out.println("Libraries are open daily from 9am to 5pm.");
     }
-    
+
     public void printAvailableBooks() {
         boolean empty = true;
         for (int i = 0; i < collection.length; i++) {
@@ -73,11 +75,11 @@ public class Library {
             System.out.println("No book in catalog");
         }
     }
-    
+
     public void printAddress() {
         System.out.println(address);
     }
-    
+
     public static void main(String[] args) {
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");

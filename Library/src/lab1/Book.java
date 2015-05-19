@@ -2,7 +2,9 @@ package lab1;
 
 /**
  * A representation of a book.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ *
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi
+ * Khatchadourian</a>.
  */
 public class Book {
 
@@ -10,7 +12,7 @@ public class Book {
      * This book's title.
      */
     private String title;
-    
+
     /**
      * True if this book is borrowed and false otherwise.
      */
@@ -18,36 +20,39 @@ public class Book {
 
     /**
      * Creates a new Book.
+     *
      * @param bookTitle The title of the book that will be created.
      */
     public Book(String bookTitle) {
-       title = bookTitle;
+        title = bookTitle;
     }
-   
-    /** 
+
+    /**
      * Marks this book as rented.
      */
     public void rented() {
         borrowed = true;
     }
-   
+
     /**
      * Marks this book as not rented.
      */
     public void returned() {
         borrowed = false;
     }
-   
+
     /**
      * Returns true if this book is rented, false otherwise.
+     *
      * @return true if this book is rented and false otherwise.
      */
     public boolean isBorrowed() {
         return borrowed;
     }
-   
-    /** 
+
+    /**
      * Returns this book's title as a String.
+     *
      * @return This book's title as a String.
      */
     public String getTitle() {
@@ -64,4 +69,4 @@ public class Book {
         example.returned();
         System.out.println("Borrowed? (should be false): " + example.isBorrowed());
     }
-} 
+}
